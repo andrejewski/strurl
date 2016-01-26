@@ -1,0 +1,15 @@
+
+footer.footing
+  p
+    b: a(href='/') Handle List
+    // | &#32;-&#32;
+    // a(href='/about/') About
+    //-
+      | &#32;-&#32;
+      a(href='/ios') Download for iOS
+      | &#32;-&#32;
+      a(href='/android') Download for Android
+    if !pov.anon
+      | &#32;-&#32;
+      a(href='/account/logout') Logout
+

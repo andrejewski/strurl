@@ -1,0 +1,12 @@
+{
+  "name": "big-text",
+  "version": "1.0.0",
+  "description": "show big text",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "author": "Chris Andrejewski <christopher.andrejewski@gmail.com>",
+  "license": "ISC"
+}

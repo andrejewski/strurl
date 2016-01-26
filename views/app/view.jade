@@ -1,0 +1,33 @@
+
+extends ../application
+
+block title
+  title= text
+
+block document
+
+  form#form
+    textarea#text= text
+
+  script(src='/scripts/fittext.js')
+  script(src='/scripts/autosize.min.js')
+  script.
+    var form = document.getElementById('form');
+    var text = document.getElementById('text');
+    window.fitText(text);
+    window.autosize(text);
+    text.onkeyup = function(e) {
+      var ENTER = 13;
+      if(e.keyCode === ENTER) update();
+      window.fitText(text);
+    }
+
+    form.onsubmit = function(e) {
+      e.preventDefault();
+      update();
+    }
+
+    function update() {
+      window.location = '/'+text.value;
+    }
+

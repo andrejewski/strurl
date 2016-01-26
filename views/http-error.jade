@@ -1,0 +1,17 @@
+
+extends ./application
+
+block title
+  title #{http.code} - Handle List
+
+block document
+  .container.container-view
+    .heading.heading-center
+      h1= http.code
+      h2= http.status
+    if http.error.name == 'Error'
+      p: b= http.error.name
+      p: pre= http.error.message
+    else
+      p= http.error
+

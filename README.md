@@ -1,2 +1,7 @@
-# strurl
-Type anything and send it as a link to anyone.
+
+# String URL (strurl.com)
+
+A quick tool to show text. The URL is the database.
+
+TODO: Add ads and Google Anaytics.
+
