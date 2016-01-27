@@ -1,7 +1,10 @@
 
-# String URL (strurl.com)
+# String URL (strurl)
 
 A quick tool to show text. The URL is the database.
 
-TODO: Add ads and Google Anaytics.
+Built with:
+
+- [Autosize](http://www.jacklmoore.com/autosize/)
+- [FitText](http://fittextjs.com/)
 
