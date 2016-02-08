@@ -17,6 +17,9 @@ form.onsubmit = function(e) {
   update();
 }
 
+var $submitBtn = document.getElementById('submit-button');
+$submitBtn.onclick = update;
+
 function update() {
   window.location.hash = encodeURIComponent(text.value);
 }
